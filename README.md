@@ -10,14 +10,14 @@ git clone https://github.com/KevinDanne/.dotfiles ~/
 ```
 2. Stow files
 ```sh
-stow ~/.dotfiles
+stow ~/.dotfiles/stow
 ```
 
 ## Uninstall
 
 1. Unlink files
 ```sh
-stow -D ~/.dotfiles
+stow -D ~/.dotfiles/stow
 ```
 2. Remove repository
 ```sh

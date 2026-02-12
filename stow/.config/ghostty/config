@@ -1,0 +1,6 @@
+command = /usr/bin/fish --login --interactive
+
+theme = Rose Pine
+
+font-family = Hack Nerd Font
+font-size = 16
