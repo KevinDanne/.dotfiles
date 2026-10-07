@@ -46,8 +46,8 @@ The script is idempotent and will:
 10. Install Node LTS via fnm and [pnpm](https://pnpm.io/installation) (standalone)
 11. Set zsh as the default shell
 
-Not included on purpose (install manually on the work machine): JetBrains Toolbox, Unity Hub, Teams for Linux, Godot.
-Company-specific git settings (e.g. `credential.https://dev.azure.com.useHttpPath`) go into `~/.gitconfig.local`.
+Not included on purpose – install manually if needed: JetBrains Toolbox, Unity Hub, Teams for Linux, Godot.
+Machine-specific git settings (identity, host-specific credentials) go into `~/.gitconfig.local`.
 
 ### Adding packages
 
