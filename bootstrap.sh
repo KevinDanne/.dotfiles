@@ -16,11 +16,11 @@ APT_PACKAGES=(
   # terminal
   ghostty
   # cli tools
-  yazi ffmpeg jq ripgrep fzf zoxide glow
+  yazi lazygit ffmpeg jq ripgrep fzf zoxide glow
   # dev
   neovim codium podman
   # desktop
-  copyq proton-vpn-gnome-desktop
+  copyq proton-vpn-gnome-desktop kde-config-flatpak
 )
 
 # name:flags
