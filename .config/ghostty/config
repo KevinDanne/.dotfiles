@@ -1,6 +1,0 @@
-command = /usr/bin/fish --login --interactive
-
-theme = Catppuccin Mocha
-
-font-family = Hack Nerd Font
-font-size = 16
