@@ -1,0 +1,8 @@
+[credential]
+	credentialStore = secretservice
+	helper =
+	helper = /usr/local/bin/git-credential-manager
+
+# Machine-specific settings (user identity, company hosts) – not tracked
+[include]
+	path = ~/.gitconfig.local

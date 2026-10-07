@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Waywallen
+X-XDP-Autostart=org.waywallen.waywallen
+Exec=flatpak run --command=waywallen org.waywallen.waywallen --no-ui
+X-Flatpak=org.waywallen.waywallen
