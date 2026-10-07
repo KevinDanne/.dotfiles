@@ -13,5 +13,8 @@ if [ -d "$FNM_PATH" ]; then
   eval "$(fnm env --shell zsh)"
 fi
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 # Zoxide
 eval "$(zoxide init zsh)"
