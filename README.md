@@ -14,7 +14,7 @@ Personal dotfiles for Linux, managed with [GNU Stow](https://www.gnu.org/softwar
 | [Waywallen](https://github.com/waywallen/waywallen) autostart | `.config/autostart/org.waywallen.waywallen.desktop` |
 | Login environment for shells and GUI apps (PATH, pnpm, fnm default Node) | `.profile`, `.zprofile` |
 | KDE desktop launchers | `kde/Desktop` (not stowed, copied by `bootstrap.sh`) |
-| [IdeaVim](https://github.com/JetBrains/ideavim) | `.ideavimrc` |
+| [IdeaVim](https://github.com/JetBrains/ideavim) + [helix.vim](https://github.com/chtenb/helix.vim) | `.ideavimrc` (helix.vim as submodule in `vendor/`, not stowed) |
 
 ## Installation
 
@@ -22,7 +22,7 @@ Personal dotfiles for Linux, managed with [GNU Stow](https://www.gnu.org/softwar
 
 ```sh
 sudo apt install git
-git clone https://github.com/KevinDanne/.dotfiles ~/.dotfiles
+git clone --recurse-submodules https://github.com/KevinDanne/.dotfiles ~/.dotfiles
 ~/.dotfiles/bootstrap.sh
 ```
 
@@ -66,7 +66,7 @@ Rule of thumb: GUI apps via Flatpak (sandboxed, fast updates), snap only if ther
 ### Manual (configs only)
 
 ```sh
-git clone https://github.com/KevinDanne/.dotfiles ~/.dotfiles
+git clone --recurse-submodules https://github.com/KevinDanne/.dotfiles ~/.dotfiles
 cd ~/.dotfiles && stow --no-folding . && cd -
 ```
 

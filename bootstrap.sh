@@ -264,6 +264,8 @@ backup_conflicts() {
 
 stow_dotfiles() {
   info "Stowing dotfiles"
+  # Third-party configs (vendor/) are git submodules, a plain clone leaves them empty
+  git -C "$DOTFILES" submodule update --init --recursive
   # Unfold directory links from older stow runs, otherwise files would be backed up through them
   stow --dir="$DOTFILES" --target="$HOME" --delete .
   backup_conflicts
