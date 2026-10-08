@@ -30,12 +30,12 @@ The script is idempotent and will:
 
 1. Add the [Yazi](https://yazi-rs.github.io/docs/installation), [Proton VPN](https://protonvpn.com/support/official-linux-vpn-ubuntu/), [VSCodium](https://vscodium.com/) and [Charm](https://github.com/charmbracelet/glow#package-manager) (glow) apt repositories
 2. Install packages – the lists are at the top of `bootstrap.sh`:
-   - apt: CLI tools, dev tools and apps that need full system access (Ghostty, Yazi, Neovim, VSCodium, Podman, CopyQ, Proton VPN)
+   - apt: CLI tools, dev tools and apps that need full system access ([Ghostty](https://ghostty.org/), [Yazi](https://yazi-rs.github.io/), [Neovim](https://neovim.io/), [VSCodium](https://vscodium.com/), [Podman](https://podman.io/), [CopyQ](https://hluk.github.io/CopyQ/), [Proton VPN](https://protonvpn.com/))
    - [Steam](https://store.steampowered.com/about/) (official `.deb`, enables i386)
    - `.deb` from latest GitHub release: [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager)
    - [OpenLogi](https://github.com/AprilNEA/OpenLogi) via its official installer (verifies minisign signature + SHA256SUMS)
-   - snap: `helix` (classic), `proton-mail`
-   - flatpak (Flathub): Zen Browser, Thunderbird, LibreOffice, Discord, Spotify, Bruno, Podman Desktop, VLC, [Waywallen](https://github.com/waywallen/waywallen)
+   - snap: [Helix](https://helix-editor.com/) (classic), [Proton Mail](https://proton.me/mail)
+   - flatpak (Flathub): [Zen Browser](https://zen-browser.app/), [Thunderbird](https://www.thunderbird.net/), [LibreOffice](https://www.libreoffice.org/), [Discord](https://discord.com/), [Spotify](https://www.spotify.com/), [Bruno](https://www.usebruno.com/), [Podman Desktop](https://podman-desktop.io/), [VLC](https://www.videolan.org/vlc/), [Waywallen](https://github.com/waywallen/waywallen)
 3. Set up Waywallen: MPRIS override, [KDE plugin](https://github.com/waywallen/waywallen-display) and [Wallpaper Engine plugin](https://github.com/waywallen/open-wallpaper-engine) (latest GitHub releases)
 4. Install Oh My Zsh **without overwriting `.zshrc`**
 5. Install fnm **without modifying `.zshrc`**
