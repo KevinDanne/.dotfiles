@@ -311,8 +311,15 @@ install_pnpm() {
     return
   fi
   info "Installing pnpm"
-  # PATH setup is already in the stowed .profile, so the installer finds it and leaves it alone
-  curl -fsSL https://get.pnpm.io/install.sh | env PNPM_HOME="$HOME/.local/share/pnpm" SHELL=/bin/sh sh -
+  # The installer always runs `pnpm setup`, which adds PATH lines to a shell config.
+  # .profile already has them, so point setup at a throwaway sh config ($ENV) instead
+  # of letting it touch ~/.bashrc or the stowed ~/.zshrc.
+  local tmp
+  tmp="$(mktemp -d)"
+  touch "$tmp/profile"
+  curl -fsSL https://get.pnpm.io/install.sh \
+    | env PNPM_HOME="$HOME/.local/share/pnpm" SHELL=/bin/sh ENV="$tmp/profile" sh -
+  rm -rf "$tmp"
 }
 
 set_default_shell() {
