@@ -30,7 +30,7 @@ The script is idempotent and will:
 
 1. Add the [Yazi](https://yazi-rs.github.io/docs/installation), [Proton VPN](https://protonvpn.com/support/official-linux-vpn-ubuntu/), [VSCodium](https://vscodium.com/) and [Charm](https://github.com/charmbracelet/glow#package-manager) (glow) apt repositories
 2. Install packages – the lists are at the top of `bootstrap.sh`:
-   - apt: CLI tools, dev tools and apps that need full system access ([Ghostty](https://ghostty.org/), [Yazi](https://yazi-rs.github.io/), [Neovim](https://neovim.io/), [VSCodium](https://vscodium.com/), [Podman](https://podman.io/), [CopyQ](https://hluk.github.io/CopyQ/), [Proton VPN](https://protonvpn.com/))
+   - apt: CLI tools, dev tools and apps that need full system access ([Ghostty](https://ghostty.org/), [Yazi](https://yazi-rs.github.io/), [VSCodium](https://vscodium.com/), [Podman](https://podman.io/), [CopyQ](https://hluk.github.io/CopyQ/), [Proton VPN](https://protonvpn.com/))
    - [Steam](https://store.steampowered.com/about/) (official `.deb`, enables i386)
    - `.deb` from latest GitHub release: [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager)
    - [OpenLogi](https://github.com/AprilNEA/OpenLogi) via its official installer (verifies minisign signature + SHA256SUMS)
