@@ -12,7 +12,7 @@ Personal dotfiles for Linux, managed with [GNU Stow](https://www.gnu.org/softwar
 | [Yazi](https://yazi-rs.github.io/) | `.config/yazi/yazi.toml` |
 | [Git](https://git-scm.com/) + [GCM](https://github.com/git-ecosystem/git-credential-manager) | `.gitconfig` (identity in untracked `~/.gitconfig.local`) |
 | [Waywallen](https://github.com/waywallen/waywallen) autostart | `.config/autostart/org.waywallen.waywallen.desktop` |
-| Login shell environment (PATH, pnpm) | `.profile`, `.zprofile` |
+| Login environment for shells and GUI apps (PATH, pnpm, fnm default Node) | `.profile`, `.zprofile` |
 | KDE desktop launchers | `kde/Desktop` (not stowed, copied by `bootstrap.sh`) |
 | [IdeaVim](https://github.com/JetBrains/ideavim) | `.ideavimrc` |
 

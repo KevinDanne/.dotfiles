@@ -20,6 +20,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# fnm default Node for GUI apps (shells override it via `fnm env` in .zshrc)
+if [ -d "$HOME/.local/share/fnm/aliases/default/bin" ] ; then
+    PATH="$HOME/.local/share/fnm/aliases/default/bin:$PATH"
+fi
+
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
