@@ -351,7 +351,7 @@ main() {
   install_node
   install_pnpm
   set_default_shell
-  info "Done! Restart your terminal (or log out/in if the default shell changed)."
+  info "Done! Reboot to apply the default shell and environment (logging out is not enough on KDE)."
 }
 
 main "$@"

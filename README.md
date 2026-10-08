@@ -46,6 +46,8 @@ The script is idempotent and will:
 10. Install [Node.js](https://nodejs.org/) LTS via fnm and [pnpm](https://pnpm.io/) (standalone)
 11. Set [zsh](https://www.zsh.org/) as the default shell
 
+**Reboot afterwards.** Logging out is not enough on KDE: the session keeps the old `$SHELL` and environment, so zsh, `.profile` and the Flatpak app icons only take effect after a restart.
+
 Not included on purpose – install manually if needed: JetBrains Toolbox, Unity Hub, Teams for Linux, Godot.
 Machine-specific git settings (identity, host-specific credentials) go into `~/.gitconfig.local`.
 
