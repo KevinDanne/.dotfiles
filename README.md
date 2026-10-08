@@ -37,14 +37,14 @@ The script is idempotent and will:
    - snap: [Helix](https://helix-editor.com/) (classic), [Proton Mail](https://proton.me/mail)
    - flatpak (Flathub): [Zen Browser](https://zen-browser.app/), [Thunderbird](https://www.thunderbird.net/), [LibreOffice](https://www.libreoffice.org/), [Discord](https://discord.com/), [Spotify](https://www.spotify.com/), [Bruno](https://www.usebruno.com/), [Podman Desktop](https://podman-desktop.io/), [VLC](https://www.videolan.org/vlc/), [Waywallen](https://github.com/waywallen/waywallen)
 3. Set up Waywallen: MPRIS override, [KDE plugin](https://github.com/waywallen/waywallen-display) and [Wallpaper Engine plugin](https://github.com/waywallen/open-wallpaper-engine) (latest GitHub releases)
-4. Install Oh My Zsh **without overwriting `.zshrc`**
-5. Install fnm **without modifying `.zshrc`**
-6. Install Hack Nerd Font to `~/.local/share/fonts/HackNerdFont`
-7. Back up conflicting files to `~/.dotfiles-backup/<timestamp>/` and stow the dotfiles (`--no-folding`)
+4. Install [Oh My Zsh](https://ohmyz.sh/) **without overwriting `.zshrc`**
+5. Install [fnm](https://github.com/Schniz/fnm) **without modifying `.zshrc`**
+6. Install [Hack Nerd Font](https://www.nerdfonts.com/) to `~/.local/share/fonts/HackNerdFont`
+7. Back up conflicting files to `~/.dotfiles-backup/<timestamp>/` and stow the dotfiles with [GNU Stow](https://www.gnu.org/software/stow/) (`--no-folding`)
 8. Ask for your git name/email and write them to `~/.gitconfig.local` (if missing)
 9. Copy the desktop launchers to `~/Desktop`
-10. Install Node LTS via fnm and [pnpm](https://pnpm.io/installation) (standalone)
-11. Set zsh as the default shell
+10. Install [Node.js](https://nodejs.org/) LTS via fnm and [pnpm](https://pnpm.io/) (standalone)
+11. Set [zsh](https://www.zsh.org/) as the default shell
 
 Not included on purpose – install manually if needed: JetBrains Toolbox, Unity Hub, Teams for Linux, Godot.
 Machine-specific git settings (identity, host-specific credentials) go into `~/.gitconfig.local`.
